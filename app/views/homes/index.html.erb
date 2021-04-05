@@ -1,31 +1,42 @@
     <header>
-      <div class="heading">
-        <h1 class="title">ＫＮテクノロジーズ</h1>
-      </div>
-      <div class="navbar">
-        <ul class="nav-lists">
-          <li>サロンガイド</li>
-          <li>メニュー</li>
-          <li>スタッフ一覧</li>
-          <li>ギャラリー</li>
-          <li>アクセス</li>
-          <li>ブログ</li>
-        </ul>
+      <div class="navbar navbar-dark bg-dark">
+        <div>
+          <h1 class="text-white">ＫＮテクノロジーズ</h1>
+        </div>
+        <div class="navbar">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <%=link_to '会社概要', companies_path, class: [:btn, :"btn-primary"] %>
+            </li>
+            <li class="nav-item">
+              <%=link_to '商品一覧', items_path, class: [:btn, :"mx-3", :"btn-primary"] %>
+            </li>
+            <li class="nav-item">
+              <%=link_to 'お問い合わせ', new_contact_path, class: [:btn, :"btn-primary"] %>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <div class="contents">
-      <div class="first-view">
-        <!-- 『トップ画像』を表示する -->
-      </div>
-      <div class="upper-content">
-        <!-- 『新着情報』を表示する -->
-      </div>
-      <div class="middle-content">
-        <!-- 『スタイリスト紹介』を表示する -->
-      </div>
-      <div class="bottom-content">
-        <!-- 『フォーム』を表示する -->
+      <div class="jumbotron jumbotron-fluid main-image">
+        <div class="container">
+          <h1 class="display-3">Fluid jumbotron</h1>
+          <p class="lead">This is a modified jumbotron that occupies
+                          the entire horizontal space of its parent.</p>
+        </div>
+      </div>  
+      <div class="container">
+        <div class="upper-content ">
+          a<!-- 『新着情報』を表示する -->
+        </div>
+        <div class="middle-content">
+          b<!-- 『スタイリスト紹介』を表示する -->
+        </div>
+        <div class="bottom-content">
+         b <!-- 『フォーム』を表示する -->
+        </div>
       </div>
     </div>
 

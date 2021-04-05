@@ -1,23 +1,27 @@
-/* リセットCSS */
-body {
-  font-size: 14px;
-  color: #333;
-  margin: 0 auto;
-}
-h1,h2,h3,h4,h5,h6,p {
-  padding: 10px 0;
-  margin: 0;
-}
+/* ヘッダー */ 
+.main-image{
+  background-image: url("<%= asset_path('main.jpg') %>");
+  // background-image: url(../images/main.jpg);
+  background-size:auto;
+} 
 
-ul,li {
-  padding: 0;
-  margin: 0;
-}
-
-/* ヘッダー */
 header {
   height: 50px;
   background-color: #f0f0f0;
+  display: flex;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.nav-contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-lists{
+  display: flex;
 }
 
 /* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
